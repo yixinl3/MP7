@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mybackground"
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:alpha=".30"
+        android:contentDescription="background"
+        android:visibility="visible"
+        app:srcCompat="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exchange Rate"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="RESET" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/eurorow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/euro"
+                    android:layout_width="108dp"
+                    android:layout_height="104dp"
+                    android:contentDescription="background"
+                    app:srcCompat="@drawable/euro" />
+
+                <TextView
+                    android:id="@+id/eurotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="1.00"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/dollarrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/usa"
+                    android:layout_width="161dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/usa" />
+
+                <TextView
+                    android:id="@+id/dollar"
+                    android:layout_width="256dp"
+                    android:layout_height="44dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="1.21"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/yuanrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/china"
+                    android:layout_width="108dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/china" />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="7.70"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ukrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/uk"
+                    android:layout_width="108dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/uk" />
+
+                <TextView
+                    android:id="@+id/uktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="0.87"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
